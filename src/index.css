@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root{
+    --transition: all 300ms ease-in-out;
+    --dark-color-primary: #303030;
+    --light-color-primary: white;
+    --borders: #e9ec5c4b;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    outline: 0;
+}
+html{
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+body{
+    font-size: 1.6rem;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+   
+}
+
+/* Navbar  */
+
+.nav img{
+    height: auto;
+    width: 135px;
+    max-width: 100%;
+}
+
+.nav{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 50%;
+    background-color: var(--dark-color-primary);
+    height: 90px;
+}
+
+.nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18%;
+    list-style: none;
+    font-size: 20px;
+    color: var(--light-color-primary);
+}
+
+.nav ul li a{
+    text-decoration: none;
+    color: var(--light-color-primary);
+}
+
+.nav ul li a.active{
+    border-bottom: 1px solid #B72B30;
+}
+
+/* Home */
+
+/* Upper Content  */
+#home .upper-content{
+    background-image: url('assets/images/group-photo-front-page.jpg');
+    object-fit: cover;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-repeat: no-repeat;
+    background-size: 120%;
+    background-position: 20% 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    z-index: 10;
+    position: relative;
+
+}
+
+#home .upper-content #logo img{
+    height: auto;
+    width: 380px;
+    max-width: 100%;
+}
+
+#home .upper-content #welcome-writing{
+    width: 30%;
+    font-size: 25px;
+}
+
+#home .upper-content #logo, #home .upper-content #welcome-writing{
+    z-index: 10;
+    color: var(--light-color-primary);
+}
+
+
+
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.774);
+    z-index: 1;
+}   
+
+
+/* Testimonials */
+.all-testimonials-div h1{
+    text-align: center;
+    font-size: 50px;
+
+}
+
+#testimonials{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15%;
+    width: 100%;
+    margin: 50px auto;
+ 
+}
+
+#testimonials #left{
+    text-align: center;
+    font-size: 20px;
+}
+#testimonials #left img{
+ 
+    height: auto;
+    width: 380px;
+    max-width: 100%;
+
+}
+
+#testimonials #right{
+    width: 40%;
+    font-size: 24px;
+}
+
+/* Gallery  */
+.column{
+    columns: 4;
+    position: relative;
+}
+  
+  
+.photo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+.imageGroup{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+    gap: 1%;
+    width: 100%;
+    margin-inline: auto;
+    text-align: center;
+}
+#gallery h1{
+    text-align: center;
+    font-size: 50px;
+}
+
+
+/* Footer  */
+
+#footer{
+    background-color: var(--dark-color-primary);
+    color: var(--light-color-primary);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1%;
+}
+
+#footer ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+    list-style: none;
+}
